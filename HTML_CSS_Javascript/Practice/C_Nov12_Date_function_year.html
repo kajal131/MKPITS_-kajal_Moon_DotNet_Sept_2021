@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>date function in object</title>
+    </head>
+<body>
+    <h2>JavaScript new date</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h1 id="yr"></h1>
+    <script>
+        const d= new Date();
+        document.getElementById("demo").innerHTML=d;
+        const d2=new Date(2018, 11, 24, 10,33, 30,0);
+        document.getElementById("demo2").innerHTML=d2;
+        const d3=new Date("2015-03-25");
+        document.getElementById("demo3").innerHTML="ISO dtae format;"+d3;
+        fullyear=d.getFullYear();
+        document.getElementById("yr").innerHTML="Year extracted year"+fullyear;
+
+
+    </script>
+</body>
+</html>
